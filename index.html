@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>previous project</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div id="header">
+      <h1 id="title">Registration Form</h1>
+      <p id="description">Registration form for new applicants</p>
+    </div>
+    <div class="form-container">
+      <form id="survey-form" action="index.html" method="post">
+        <label for="name" class="input-item" id="name-label">Name</label>
+        <input type="text" id="name" placeholder="name" required>
+        <label for="email"  class="input-item" id="email-label">Email</label>
+        <input type="email" id="email" placeholder="email" required>
+        <label for="number"  class="input-item" id="number-label">Age</label>
+        <input type="number" id="number" placeholder="Age" min="18" max="64">
+        <div class="input-item"  >
+          <select id="dropdown" class="input-item"   name="lecturs">
+            <option value="python">Python</option>
+            <option value="javascript">Javascript</option>
+            <option value="ruby">Ruby</option>
+          </select>
+        </div>
+        <div  class="input-item" >
+          <label>Music<input type="radio" name="hobby" value="music" checked></label>
+          <label>Cinema<input type="radio" name="hobby" value="cinema"></label>
+          <label>Newspaper<input type="radio" name="hobby" value="newspaper"></label>
+          <label>Games<input   type="radio" name="hobby" value="games"></label>
+        </div>
+        <div class="input-item" >
+          <label>Music<input  type="checkbox" name="hobby-check" value="music"></label>
+          <label>Cinema<input  type="checkbox" name="hobby-check" value="cinema"></label>
+          <label>Newspaper<input  type="checkbox" name="hobby-check" value="newspaper"></label>
+          <label>Games<input  type="checkbox" name="hobby-check" value="games "></label>
+        </div>
+        <textarea  class="input-item" name="name" rows="2" cols="20"></textarea>
+        <button  class="input-item" id="submit" type="submit" name="button">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
